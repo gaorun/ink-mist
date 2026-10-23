@@ -18,20 +18,14 @@
 ## 安装
 
 ```sh
-mkdir -p ~/.config/ghostty/themes ~/.config/ghostty/shaders
-cp theme/ink-mist ~/.config/ghostty/themes/
-cp shaders/ink-mist.glsl ~/.config/ghostty/shaders/
+git clone https://github.com/gaorun/ink-mist.git
+cd ink-mist
+./install.sh
 ```
 
-编辑 `~/.config/ghostty/themes/ink-mist`，把 `custom-shader` 改成你的绝对路径：
+脚本会把主题和 shader 安装到 Ghostty 默认目录，并自动配好 shader 路径。
 
-```ini
-custom-shader = /Users/<你的用户名>/.config/ghostty/shaders/ink-mist.glsl
-```
-
-> **为什么不能用 `~`？** Ghostty 加载主题时不会对 `custom-shader` 做 `~` 展开（主配置才会），主题内必须写绝对路径，否则 shader 加载失败。
-
-在 Ghostty 配置文件（macOS：`~/Library/Application Support/com.mitchellh.ghostty/config.ghostty`）中加入：
+然后在 Ghostty 配置文件（macOS：`~/Library/Application Support/com.mitchellh.ghostty/config.ghostty`）中加入：
 
 ```ini
 theme = ink-mist
