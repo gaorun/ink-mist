@@ -1,6 +1,6 @@
 # Ink Mist — Ghostty 单色印刷主题
 
-炭墨底 + GPU 实时流动雾背景 + 露纸文字。视觉体系来自 mono-color 印刷规范：深炭墨场 `#101318` 上铺 Cool Gray `#E9E9E5` 纸色文字，雾效为着色器实时渲染，无图片资源。
+炭墨底 + GPU 实时流动雾背景 + 露纸文字。雾效为着色器实时渲染，无图片资源。
 
 ## 效果截图
 
@@ -17,21 +17,21 @@
 
 ## 安装
 
+一键安装（主题、shader 装进 Ghostty 默认目录，并自动写入 `theme = ink-mist`）：
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/gaorun/ink-mist/main/install.sh | sh
+```
+
+或者先克隆再运行：
+
 ```sh
 git clone https://github.com/gaorun/ink-mist.git
 cd ink-mist
 ./install.sh
 ```
 
-脚本会把主题和 shader 安装到 Ghostty 默认目录，并自动配好 shader 路径。
-
-然后在 Ghostty 配置文件（macOS：`~/Library/Application Support/com.mitchellh.ghostty/config.ghostty`）中加入：
-
-```ini
-theme = ink-mist
-```
-
-按 `Cmd+Shift+,` 重载生效。
+按 `Cmd+Shift+,` 重载 Ghostty 生效。
 
 ## 调节
 
