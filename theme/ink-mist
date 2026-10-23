@@ -1,0 +1,34 @@
+# Ink Mist — 单色印刷风：炭墨底 + 流动雾（GPU 实时渲染）+ 露纸文字
+# 安装：本文件放 ~/.config/ghostty/themes/，ink-mist.glsl 放 ~/.config/ghostty/shaders/
+# 启用：config 里写 theme = ink-mist
+#
+# 注意：ghostty 加载主题时不会对 custom-shader 做 ~ 展开，必须改成你的绝对路径
+custom-shader = /Users/YOUR_USERNAME/.config/ghostty/shaders/ink-mist.glsl
+custom-shader-animation = true
+
+background = #101318
+foreground = #E9E9E5
+
+cursor-color = #E9E9E5
+cursor-text = #101318
+
+selection-background = #3A4250
+selection-foreground = #E9E9E5
+
+# 16 色统一为灰蓝单色印刷系，低饱和
+palette = 0=#101318
+palette = 1=#A85B4E
+palette = 2=#7C8A7A
+palette = 3=#B09A6A
+palette = 4=#6E8299
+palette = 5=#8A7A8E
+palette = 6=#7A97A0
+palette = 7=#C9CDD2
+palette = 8=#5A616C
+palette = 9=#C07A6B
+palette = 10=#93A392
+palette = 11=#C7B183
+palette = 12=#8AA0B8
+palette = 13=#A793AB
+palette = 14=#93B2BB
+palette = 15=#EDEFF2
